@@ -8,7 +8,7 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.40** (Dev-Konsole, 21.11.2026, Koop-Protokoll 38). Auf der Release-Seite unter *Assets* die `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht aller bekannten Playtest-Stände – auch solche, die bisher nur lokal vorliegen – steht in [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.41** (Rüstungsarsenal, 22.11.2026, Koop-Protokoll 40). Auf der Release-Seite unter *Assets* die `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht aller bekannten Playtest-Stände – auch solche, die bisher nur lokal vorliegen – steht in [CHANGELOG.md](CHANGELOG.md).
 
 ## Installation
 
@@ -20,7 +20,7 @@ Aktuell veröffentlicht: **Playtest 0.1.40** (Dev-Konsole, 21.11.2026, Koop-Prot
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-Der exportierte Playtest 0.1.40 ist ein **Windows-x64**-Build mit **Godot 4.4.1**.
+Der exportierte Playtest 0.1.41 ist ein **Windows-x64**-Build mit **Godot 4.7.2**.
 
 ## Koop
 
@@ -30,11 +30,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. 0.1.40 ist mit 0.1.39 kompatibel (beide Protokoll 38), **nicht** mit 0.1.38 oder älter (Protokoll 37 und darunter).
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.41 ist nicht mit 0.1.40 oder älteren Builds kompatibel** (Protokoll 40 gegenüber Protokoll 38 und darunter).
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.40)
+## Steuerung (Standard in 0.1.41)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -70,7 +70,7 @@ Im Dungeon wählt ihr beim Eintritt **Runden** (QTE-Kämpfe) oder **Echtzeit** (
 
 ## Was der aktuelle Playtest enthält
 
-Die folgende Liste gilt für Playtest **0.1.40**. Laut `LIESMICH.txt` dieses Pakets bleiben Spielstand, Inhalt und Koop-Protokoll gegenüber 0.1.39 unverändert; neu hinzugekommen ist die Entwicklerkonsole. Alles Weitere ist kumulativ aus den Playtest-Notizen der vorangegangenen Pakete übernommen, soweit später keine Entfernung dokumentiert ist.
+Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind Godot 4.7.2, Koop-Protokoll 40, weitere Standard-Rüstungssets, fünf Relikt-Sets und die Werkstatt-Waffenupgrades. Alles Weitere ist kumulativ aus den Playtest-Notizen der vorangegangenen Pakete übernommen, soweit später keine Entfernung dokumentiert ist.
 
 ### Welt und Gebiete
 
@@ -101,9 +101,9 @@ Die folgende Liste gilt für Playtest **0.1.40**. Laut `LIESMICH.txt` dieses Pak
 
 - Charakterbildschirm und Inventar (C), in den Paketprüfungen mit sechs Menüreitern. Rechts liegen die Plätze Schild, Aktiv, II, III und Wurf. Waffen werden per Ziehen und Ablegen gesetzt; das Mausrad wechselt durch belegte Plätze. Reserven geben keine Boni. Mit Schild werden unvereinbare Zweihandwaffen beim Wechsel übersprungen. Während Angriff, Nachladen, Blocken, Rollen oder einer aktiven Drohne ist der Wechsel gesperrt; Magazine werden dadurch nicht aufgefüllt. Der Wurfplatz nimmt Granaten, Wurfscheiben und Umweltwerkzeuge auf und arbeitet getrennt von der Hauptwaffe.
 - Starterwaffen B1NZ, L0C0S, GUN5D4L3 und K080LD. Bei B1NZ startet die Angriffstaste eine Drohne auf den anvisierten Gegner (in den Notizen 150 Reichweite); die Drohne kehrt zum Rucksack zurück, Ausweichen kann den Einschlag vermeiden. K080LD ist als Ritualimpuls ohne Munition beschrieben. Treffer, Rüstung und Resistenzen beeinflussen den Schaden. Loot-Waffen behalten eigene Werte und dürfen stärker oder schneller sein.
-- Standard-Rüstungssets, erhältlich über Beutekapseln und den Signalturm: Nebelbergung, Wiederhüter, Zisterne, Schleusenwacht, Aschekurier, Stahlreißer, Bagger, Sturmspule, Sichelspur, Bastionswacht, Sporenhüter, Moorhüter, Weidenorakel, Wurzelgeist, Dornlitanei, Nachtzirkel, Aluhut, Pappheld, Rettungsteam, Smasher, Junkgenius, Aerial und Porzellankitsch. Jedes Set hat sechs Teile (Helm, Brust, Schultern, Arme, Beine und Rücken).
+- Standard-Rüstungssets, erhältlich über Beutekapseln und den Signalturm: Nebelbergung, Wiederhüter, Zisterne, Schleusenwacht, Aschekurier, Stahlreißer, Bagger, Sturmspule, Sichelspur, Bastionswacht, Sporenhüter, Moorhüter, Weidenorakel, Wurzelgeist, Dornlitanei, Nachtzirkel, Aluhut, Pappheld, Rettungsteam, Smasher, Junkgenius, Aerial, Porzellankitsch, Leitungsdienst, Aufbruchsdienst, Saatpfleger, Quartierwacht, Fadenpegel, Absperrtrupp, Leitungsprobe, Trassendeckung, Ringpeiler, Ringbrecher, Wundmoos, Rostwehr, Rostgewölbe, Sperrmedizin, Sentinelpanzer und Filterthron (legendär). Jedes Set hat sechs Teile (Helm, Brust, Schultern, Arme, Beine und Rücken). Weitere Sets folgen.
 - Lebendige Ausrüstung: sechs ausrüstbare 3D-Teile mit beweglichen Baugruppen – Rußfänger (Rücken), Glühmotten-Habitat (Rücken), Wartungskrabbe (Schultern), Schachtspäher-Helm (Kopf), Kolbenmanschetten (Arme), Federläufer-Schienen (Beine). Die Animationen sind kosmetisch; die passiven Werte gelten normal. Die Glühmotten nutzen die vorhandene Begleiter-Aktion und erzeugen kein zusätzliches Licht.
-- Drei Relikt-Rüstungssets mit insgesamt 18 Teilen. Jedes Teil hat 0,3 % Dropchance je besiegtem Dungeon-Gegner.
+- Fünf Relikt-Rüstungssets; jedes Teil droppt sehr selten (0,3 % je besiegtem Dungeon-Gegner). Darunter sind das Kernsystem der Labormatriarchin und das Schweigesiegel der stillen Leitung.
 - Rüstungspuppe: unter Ausstellung → Rüstung können Helm, Brust, Schultern, Arme, Beine und Rücken gleichzeitig belegt werden. Unterschiedliche Sets sind kombinierbar, ausgestellte Teile bleiben im Besitz, alte Einzelteil-Ausstellungen werden übernommen. Besucher können das Set ansehen; ihr eigener Ausstellungsstand bleibt getrennt. In 0.1.39 wurde der Wohnungsslot für den Helm auf `armor_head` korrigiert.
 - Level, Skills und persönliches Gold gehören zum Charakter. Arena-Münzen werden pro Charakter gespeichert und sind unabhängig von Gold.
 - Backpack-Begleiter mit passender Ausrüstung (Standardtaste V).
@@ -120,7 +120,7 @@ Die folgende Liste gilt für Playtest **0.1.40**. Laut `LIESMICH.txt` dieses Pak
 
 - Online über Epic Online Services: im Koop-Menü Name und gegebenenfalls einen gespeicherten Charakter wählen, dann Online mit EOS → Erstellen. Der Host teilt einen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler: Code eingeben und beitreten. Der Host startet danach mit *Base betreten* und simuliert die Spielwelt.
 - EOS-P2P kann bei Bedarf ein Relay nutzen. `eos.cfg` liegt im Paket. LAN/IP bleibt zusätzlich verfügbar (Spielport UDP 28730).
-- Koop-Protokoll 38 (EOS-Bucket in der Paketprüfung: `CHOBUTAI-38-`). 0.1.40 ist mit 0.1.39 kompatibel, nicht mit 0.1.38 oder älter.
+- Koop-Protokoll 40 (EOS-Bucket in der Paketprüfung: `CHOBUTAI-40-`). 0.1.41 ist nicht mit 0.1.40 oder älteren Builds kompatibel.
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg. Der Host steuert Reisen zwischen Bereichen. Expeditionen bleiben gemeinsame Gruppenreisen; Quartiere können unabhängig betreten und verlassen werden.
 - Charakter laden in der Lobby oder im Esc-Menü des Lagers übernimmt den gespeicherten Charakter samt Ausrüstung, Inventar, Level, Skills und persönlichem Geld. Die Gruppenwelt bleibt erhalten.
 
@@ -149,7 +149,7 @@ Die folgende Liste gilt für Playtest **0.1.40**. Laut `LIESMICH.txt` dieses Pak
 ### Audio und Technik
 
 - Soundeffekte von JDSherbert (Pixel Game Essentials SFX Pack); Atmosphärenklänge sind prozedural erstellt.
-- Windows-x64-Playtest, exportiert mit Godot 4.4.1. Eigenes App-Icon, Dateiversion 0.1.40.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
+- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.41.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
 - Das Paket bezeichnet sich ausdrücklich als Testversion. Offen ist laut `LIESMICH.txt` unter anderem der Beitritt eines zweiten Rechners über verschiedene Internetanschlüsse. Die Export-Prüfung der EXE bestätigte die Regionen Basis, Quartiere, Oberwelt, Dungeon und Arena, erreichte danach aber das Zeitlimit von 180 s vor den Checks zu Möbeln, Blickrichtung, Tag/Nacht und Tasten-Remap.
 
 ## Prüfsumme
@@ -160,9 +160,9 @@ Zu der veröffentlichten Zip gibt es eine `.sha256`-Datei. So prüfst du, ob der
 Get-FileHash .\Sparkz_in_the_Dust_Playtest_*.zip -Algorithm SHA256
 ```
 
-SHA256 der aktuellen Zip `Sparkz_in_the_Dust_Playtest_2026-11-21_Dev-Konsole.zip`:
+SHA256 der aktuellen Zip `Sparkz_in_the_Dust_Playtest_2026-11-22_Ruestungsarsenal.zip`:
 
-`44f28ce345f87a26a66022ee0c8a4966e8076954365ae4f8c70507361ed3a090`
+`3e2beb768213b2ec20475aa0e9eb9719a6c8696e1b4dbd9735bc07d69172f26a`
 
 ## Feedback
 
@@ -172,7 +172,7 @@ Spielstände bleiben aus Kompatibilitätsgründen unter `%APPDATA%\Godot\app_use
 
 ## Credits und Lizenzen
 
-Im Playtest-Paket liegen `CREDITS.txt`, `GODOT-LICENSE.txt` und `EOSG-LICENSE.txt`. In der `CREDITS.txt` von 0.1.40 heißt es:
+Im Playtest-Paket liegen `CREDITS.txt`, `GODOT-LICENSE.txt` und `EOSG-LICENSE.txt`. In der `CREDITS.txt` von 0.1.41 heißt es:
 
 - Sound effects by JDSherbert (Pixel Game Essentials SFX Pack); Audiodaten unverändert
 - Atmosphärenklänge: prozedural erstellt

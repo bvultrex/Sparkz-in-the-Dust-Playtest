@@ -8,17 +8,35 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
-## [Unveröffentlicht]
+## [0.1.41] - 2026-11-22
 
-**In Arbeit für 0.1.41.** Diese Änderungen sind im Entwicklungsstand enthalten, aber noch nicht in einem veröffentlichten Playtest-Paket.
+**Playtest 0.1.41 – Rüstungsarsenal.** Dateiversion `0.1.41.0`, Koop-Protokoll 40, Windows x64, exportiert mit Godot 4.7.2.
+
+- Paket: `Sparkz_in_the_Dust_Playtest_2026-11-22_Ruestungsarsenal.zip`
+- Quellen: `LIESMICH.txt` und `BUILD.json` des Pakets (22.11.2026)
+- **Nicht kompatibel** mit 0.1.40 oder älteren Builds (Protokoll 40 gegenüber Protokoll 38 und darunter)
+- SHA256 der Zip: `3e2beb768213b2ec20475aa0e9eb9719a6c8696e1b4dbd9735bc07d69172f26a`
 
 ### Hinzugefügt
 
-- Waffen-Upgrade-Auswahl pro Instanz in der Basislager-Werkstatt (22.11.2026).
+- Neue Standard-Rüstungssets im normalen Beute-Pool: Leitungsdienst, Aufbruchsdienst, Saatpfleger, Quartierwacht, Fadenpegel, Absperrtrupp, Leitungsprobe, Trassendeckung, Ringpeiler, Ringbrecher, Wundmoos, Rostwehr, Rostgewölbe, Sperrmedizin, Sentinelpanzer und der legendäre Filterthron.
+- Die Relikt-Rüstungen sind jetzt fünf Sets. Jedes Teil droppt sehr selten (0,3 % je besiegtem Dungeon-Gegner). Neu bzw. jetzt ebenfalls in diesem seltenen Wurf: das Kernsystem der Labormatriarchin und das Schweigesiegel der stillen Leitung.
+- Waffen-Upgrade-Auswahl pro Instanz in der Basislager-Werkstatt.
+- Weitere Sets folgen.
+
+### Geändert
+
+- Der Playtest läuft auf Godot 4.7.2 (bisher 4.4.1). Renderer bleibt Compatibility.
+- Koop-Protokoll und EOS-Bucket stehen auf 40 (`CHOBUTAI-40-`). Clients mit 0.1.40 oder älter finden sich nicht mehr.
 
 ### Behoben
 
-- Relikt-Code sickerte in neue Spiele und andere Speicherplätze (22.11.2026).
+- Ein Relikt-Code konnte in neue Spiele und andere Speicherplätze sickern.
+
+### Hinweise
+
+- Das Paket bleibt eine Testversion. Offen ist unter anderem der Beitritt eines zweiten Rechners über verschiedene Internetanschlüsse.
+- Alte Spielstände bleiben lesbar. Das Zip enthält keine persönlichen Spielstände.
 
 ## [0.1.40] - 2026-11-21
 
