@@ -8,7 +8,7 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.41** (Rüstungsarsenal, 22.11.2026, Koop-Protokoll 40). Auf der Release-Seite unter *Assets* die `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht aller bekannten Playtest-Stände – auch solche, die bisher nur lokal vorliegen – steht in [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.42** (Controller und Boss-Trophäen, 23.11.2026, Koop-Protokoll 41). Auf der Release-Seite unter *Assets* die `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht aller bekannten Playtest-Stände – auch solche, die bisher nur lokal vorliegen – steht in [CHANGELOG.md](CHANGELOG.md).
 
 ## Installation
 
@@ -20,7 +20,9 @@ Aktuell veröffentlicht: **Playtest 0.1.41** (Rüstungsarsenal, 22.11.2026, Koop
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-Der exportierte Playtest 0.1.41 ist ein **Windows-x64**-Build mit **Godot 4.7.2**.
+**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In Textfeldern öffnet **Steam+X** die Bildschirmtastatur. In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
+
+Der exportierte Playtest 0.1.42 ist ein **Windows-x64**-Build mit **Godot 4.7.2**.
 
 ## Koop
 
@@ -30,11 +32,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.41 ist nicht mit 0.1.40 oder älteren Builds kompatibel** (Protokoll 40 gegenüber Protokoll 38 und darunter).
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.42 ist nicht mit 0.1.41 oder älteren Builds kompatibel** (Protokoll 41 gegenüber Protokoll 40 und darunter).
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.41)
+## Steuerung (Standard in 0.1.42)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -66,11 +68,13 @@ Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tas
 
 Im Dungeon wählt ihr beim Eintritt **Runden** (QTE-Kämpfe) oder **Echtzeit** (Kampf direkt im Raum); im Koop entscheidet der Host.
 
+**Controller und Steam Deck** (ab 0.1.42): Xbox-Controller und Steam Deck werden unterstützt. Bewegen mit dem linken Stick, Zielen mit dem rechten Stick, Menüs ohne Maus (sichtbarer Fokus; B/Zurück schließt). Der Bunker-Editor ist vollständig mit dem Pad bedienbar. Standardbelegungen für Fähigkeiten liegen auf dem Steuerkreuz; Tasten bleiben in den Einstellungen änderbar.
+
 **Dev-Konsole** (ab 0.1.40): Taste `^` öffnet und schließt die Konsole, Esc schließt ebenfalls. Befehle stehen in der `LIESMICH.txt` und in den [Release Notes zu 0.1.40](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/tag/v0.1.40).
 
 ## Was der aktuelle Playtest enthält
 
-Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind Godot 4.7.2, Koop-Protokoll 40, weitere Standard-Rüstungssets, fünf Relikt-Sets und die Werkstatt-Waffenupgrades. Alles Weitere ist kumulativ aus den Playtest-Notizen der vorangegangenen Pakete übernommen, soweit später keine Entfernung dokumentiert ist.
+Die folgende Liste gilt für Playtest **0.1.42**. Neu gegenüber 0.1.41 sind Set-Boni und Gruppen-Boni, Boss-Trophäen, Controller- und Steam-Deck-Unterstützung sowie mehrere Spiel- und Oberflächenkorrekturen. Koop nutzt Protokoll 41 und ist nicht mit 0.1.41 oder älteren Builds kompatibel. Alles Weitere ist kumulativ aus den Playtest-Notizen der vorangegangenen Pakete übernommen, soweit später keine Entfernung dokumentiert ist.
 
 ### Welt und Gebiete
 
@@ -104,6 +108,8 @@ Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind God
 - Standard-Rüstungssets, erhältlich über Beutekapseln und den Signalturm: Nebelbergung, Wiederhüter, Zisterne, Schleusenwacht, Aschekurier, Stahlreißer, Bagger, Sturmspule, Sichelspur, Bastionswacht, Sporenhüter, Moorhüter, Weidenorakel, Wurzelgeist, Dornlitanei, Nachtzirkel, Aluhut, Pappheld, Rettungsteam, Smasher, Junkgenius, Aerial, Porzellankitsch, Leitungsdienst, Aufbruchsdienst, Saatpfleger, Quartierwacht, Fadenpegel, Absperrtrupp, Leitungsprobe, Trassendeckung, Ringpeiler, Ringbrecher, Wundmoos, Rostwehr, Rostgewölbe, Sperrmedizin, Sentinelpanzer und Filterthron (legendär). Jedes Set hat sechs Teile (Helm, Brust, Schultern, Arme, Beine und Rücken). Weitere Sets folgen.
 - Lebendige Ausrüstung: sechs ausrüstbare 3D-Teile mit beweglichen Baugruppen – Rußfänger (Rücken), Glühmotten-Habitat (Rücken), Wartungskrabbe (Schultern), Schachtspäher-Helm (Kopf), Kolbenmanschetten (Arme), Federläufer-Schienen (Beine). Die Animationen sind kosmetisch; die passiven Werte gelten normal. Die Glühmotten nutzen die vorhandene Begleiter-Aktion und erzeugen kein zusätzliches Licht.
 - Fünf Relikt-Rüstungssets; jedes Teil droppt sehr selten (0,3 % je besiegtem Dungeon-Gegner). Darunter sind das Kernsystem der Labormatriarchin und das Schweigesiegel der stillen Leitung.
+- Set-Boni für vollständige Rüstungssets, einschließlich Gruppen-Boni, wenn mehrere Spieler im Koop Teile desselben Sets tragen.
+- Boss-Trophäen: Bosse lassen je Kill ein noch fehlendes Teil fallen. In der Arena beträgt die Chance 25 %. Besiegte Bosse erscheinen erneut und tragen einen Namensbalken.
 - Rüstungspuppe: unter Ausstellung → Rüstung können Helm, Brust, Schultern, Arme, Beine und Rücken gleichzeitig belegt werden. Unterschiedliche Sets sind kombinierbar, ausgestellte Teile bleiben im Besitz, alte Einzelteil-Ausstellungen werden übernommen. Besucher können das Set ansehen; ihr eigener Ausstellungsstand bleibt getrennt. In 0.1.39 wurde der Wohnungsslot für den Helm auf `armor_head` korrigiert.
 - Level, Skills und persönliches Gold gehören zum Charakter. Arena-Münzen werden pro Charakter gespeichert und sind unabhängig von Gold.
 - Backpack-Begleiter mit passender Ausrüstung (Standardtaste V).
@@ -120,7 +126,7 @@ Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind God
 
 - Online über Epic Online Services: im Koop-Menü Name und gegebenenfalls einen gespeicherten Charakter wählen, dann Online mit EOS → Erstellen. Der Host teilt einen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler: Code eingeben und beitreten. Der Host startet danach mit *Base betreten* und simuliert die Spielwelt.
 - EOS-P2P kann bei Bedarf ein Relay nutzen. `eos.cfg` liegt im Paket. LAN/IP bleibt zusätzlich verfügbar (Spielport UDP 28730).
-- Koop-Protokoll 40 (EOS-Bucket in der Paketprüfung: `CHOBUTAI-40-`). 0.1.41 ist nicht mit 0.1.40 oder älteren Builds kompatibel.
+- Koop-Protokoll 41 (EOS-Bucket in der Paketprüfung: `CHOBUTAI-41-`). 0.1.42 ist nicht mit 0.1.41 oder älteren Builds kompatibel.
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg. Der Host steuert Reisen zwischen Bereichen. Expeditionen bleiben gemeinsame Gruppenreisen; Quartiere können unabhängig betreten und verlassen werden.
 - Charakter laden in der Lobby oder im Esc-Menü des Lagers übernimmt den gespeicherten Charakter samt Ausrüstung, Inventar, Level, Skills und persönlichem Geld. Die Gruppenwelt bleibt erhalten.
 
@@ -133,7 +139,7 @@ Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind God
 
 ### Steuerung, Speichern und Oberfläche
 
-- Tastenbelegung im Titelmenü unter Einstellungen und im Spiel über Charakter/Inventar (im Koop zusätzlich Esc). Eine Aktion hat bis zu drei Belegungen, Konflikte werden gemeldet, „Alles zurücksetzen“ stellt die Standardbelegung wieder her, Änderungen werden sofort pro Benutzer gespeichert, Hinweise im HUD folgen der Belegung. Esc bleibt als fester Rückweg. Die Standardbelegung steht im Abschnitt [Steuerung](#steuerung-standard-in-0140).
+- Tastenbelegung im Titelmenü unter Einstellungen und im Spiel über Charakter/Inventar (im Koop zusätzlich Esc). Eine Aktion hat bis zu drei Belegungen, Konflikte werden gemeldet, „Alles zurücksetzen“ stellt die Standardbelegung wieder her, Änderungen werden sofort pro Benutzer gespeichert, Hinweise im HUD folgen der Belegung. Esc bleibt als fester Rückweg. Die Standardbelegung steht im Abschnitt [Steuerung](#steuerung-standard-in-0142). Xbox-Controller und Steam Deck: Analogsticks, Menüfokus, Bunker-Editor mit dem Pad, Anzeige-Option (Letterbox oder Bildschirm füllen) und Steam+X für die Bildschirmtastatur.
 - Sechs Speicherplätze. F5 öffnet die Speicherauswahl, F9 die Ladeauswahl im Solo-Spiel. Neue Spiele fragen vor Beginn nach dem Ziel-Slot, Automatiken speichern danach in den aktiven Slot. Belegte Slots werden zum Überschreiben erneut ausgewählt. Unter Windows wird beim Überschreiben die Umbenennung kurz erneut versucht, wenn die Datei gerade gesperrt ist. Alte Spielstände bleiben lesbar. Sie liegen unter `%APPDATA%\Godot\app_userdata\CHOBUTAI - Action RPG Prototype\`; das Paket enthält keine persönlichen Spielstände.
 - Korrigierte Links-/Rechts-Ausrichtung der Charaktere in den gemeinsamen 3D-Ansichten.
 - UI-Polish, in den Paketprüfungen von 0.1.38/0.1.39 als sechs überarbeitete Menüreiter geprüft. Eine feinere Aufschlüsselung, was das Polish umfasst, steht in den Playtest-Notizen nicht.
@@ -149,7 +155,7 @@ Die folgende Liste gilt für Playtest **0.1.41**. Neu gegenüber 0.1.40 sind God
 ### Audio und Technik
 
 - Soundeffekte von JDSherbert (Pixel Game Essentials SFX Pack); Atmosphärenklänge sind prozedural erstellt.
-- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.41.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
+- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.42.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
 - Das Paket bezeichnet sich ausdrücklich als Testversion. Offen ist laut `LIESMICH.txt` unter anderem der Beitritt eines zweiten Rechners über verschiedene Internetanschlüsse. Die Export-Prüfung der EXE bestätigte die Regionen Basis, Quartiere, Oberwelt, Dungeon und Arena, erreichte danach aber das Zeitlimit von 180 s vor den Checks zu Möbeln, Blickrichtung, Tag/Nacht und Tasten-Remap.
 
 ## Prüfsumme
@@ -160,9 +166,9 @@ Zu der veröffentlichten Zip gibt es eine `.sha256`-Datei. So prüfst du, ob der
 Get-FileHash .\Sparkz_in_the_Dust_Playtest_*.zip -Algorithm SHA256
 ```
 
-SHA256 der aktuellen Zip `Sparkz_in_the_Dust_Playtest_2026-11-22_Ruestungsarsenal.zip`:
+SHA256 der aktuellen Zip `Sparkz_in_the_Dust_Playtest_2026-11-23_Controller.zip`:
 
-`3e2beb768213b2ec20475aa0e9eb9719a6c8696e1b4dbd9735bc07d69172f26a`
+`7beb2e1eb1fd6dd2774e71fc6e5a71a38f57786734e026aa810ac556817d602c`
 
 ## Feedback
 
@@ -172,7 +178,7 @@ Spielstände bleiben aus Kompatibilitätsgründen unter `%APPDATA%\Godot\app_use
 
 ## Credits und Lizenzen
 
-Im Playtest-Paket liegen `CREDITS.txt`, `GODOT-LICENSE.txt` und `EOSG-LICENSE.txt`. In der `CREDITS.txt` von 0.1.41 heißt es:
+Im Playtest-Paket liegen `CREDITS.txt`, `GODOT-LICENSE.txt` und `EOSG-LICENSE.txt`. In der `CREDITS.txt` von 0.1.42 heißt es:
 
 - Sound effects by JDSherbert (Pixel Game Essentials SFX Pack); Audiodaten unverändert
 - Atmosphärenklänge: prozedural erstellt

@@ -8,6 +8,43 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.42] - 2026-11-23
+
+**Playtest 0.1.42 – Controller & Boss-Trophäen.** Dateiversion `0.1.42.0`, Koop-Protokoll 41, Windows x64, exportiert mit Godot 4.7.2.
+
+- Paket: `Sparkz_in_the_Dust_Playtest_2026-11-23_Controller.zip`
+- Quellen: `LIESMICH.txt` und `BUILD.json` des Pakets (23.11.2026)
+- **Nicht kompatibel** mit 0.1.41 oder älteren Builds (Protokoll 41 gegenüber Protokoll 40 und darunter)
+- SHA256 der Zip: `7beb2e1eb1fd6dd2774e71fc6e5a71a38f57786734e026aa810ac556817d602c`
+
+### Hinzugefügt
+
+- Set-Boni für vollständige Rüstungssets, einschließlich Gruppen-Boni im Koop.
+- Boss-Trophäen: Bosse lassen je Kill ein noch fehlendes Teil fallen. In der Arena beträgt die Chance 25 %. Bosse erscheinen erneut und tragen einen Namensbalken.
+- Controller-Unterstützung für Xbox-Controller und Steam Deck: Analog bewegen, mit dem rechten Stick zielen, Menüs und Bunker-Editor ohne Maus. In den Einstellungen gibt es die Anzeige-Optionen „Pixelgenau (Letterbox)“ und „Bildschirm füllen“ (auf 1280×800/16:10 wird Füllen automatisch vorgeschlagen). In Textfeldern öffnet Steam+X die Bildschirmtastatur.
+- Steam Deck: In Steam unter „Nicht-Steam-Spiel hinzufügen“ die Windows-EXE einbinden und den Windows-Build mit Proton starten.
+
+### Geändert
+
+- Koop-Protokoll und EOS-Bucket stehen auf 41 (`CHOBUTAI-41-`). Clients mit 0.1.41 oder älter finden sich nicht mehr.
+- Wächter schießen im Echtzeitkampf 25 % langsamer.
+- Inventarnamen nutzen Seltenheitsfarben und lassen sich nach Seltenheit oder Kategorie sortieren.
+
+### Behoben
+
+- Questbelohnungen vom Auftragbrett konnten mehrfach abgeholt werden.
+- Ausgestellte Gegenstände im Bunker waren nicht zuverlässig als Besitz erkennbar und einlagerbar.
+- Schilde wurden nach dem Wechsel von einer Zweihandwaffe nicht wieder angelegt.
+- Die Sitzpose am Lagerfeuer und auf Bänken schwebte oder saß in der Feuerstelle.
+- Dasselbe QTE-Minispiel konnte direkt hintereinander wiederholt werden.
+- Nahkampftreffer am Umkehrpunkt des Schwungs wurden nicht zuverlässig erkannt.
+- Ein einziges Starter- oder Reservewaffen-Exemplar ließ sich nicht zwischen den Waffenplätzen verschieben.
+
+### Hinweise
+
+- Das Paket bleibt eine Testversion. Offen ist unter anderem der Beitritt eines zweiten Rechners über verschiedene Internetanschlüsse.
+- Alte Spielstände bleiben lesbar. Das Zip enthält keine persönlichen Spielstände.
+
 ## [0.1.41] - 2026-11-22
 
 **Playtest 0.1.41 – Rüstungsarsenal.** Dateiversion `0.1.41.0`, Koop-Protokoll 40, Windows x64, exportiert mit Godot 4.7.2.
