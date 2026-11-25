@@ -8,6 +8,38 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.43] - 2026-11-25
+
+**Playtest 0.1.43 - Dungeon und Linux-Experiment.** Dateiversion `0.1.43.0`, Koop-Protokoll 43, Windows x64 und experimentelles Linux x64, exportiert mit Godot 4.7.2.
+
+- Windows-Paket: `Sparkz_in_the_Dust_Playtest_0.1.43_Windows.zip`
+- SHA256 Windows: `d1bf1b389e3dc3cf3c6de5d6103ed85d54351a2ea9fc64c270e9a8d960ec757c`
+- Linux-Paket: `Sparkz_in_the_Dust_Playtest_0.1.43_Linux.zip`
+- SHA256 Linux: `4c2c2598448ed207f00625395f4ba6dfd018132b20f4dd805eec0b40cb2c5f3f`
+- Quell-Commit (lokales Projekt): `92628f28a138ee03d07fd54ca93ad9f653815ca4`
+- **Nicht kompatibel** mit 0.1.42 oder älteren Builds (Koop-Protokoll 43 statt 41 und darunter).
+
+### Hinzugefügt
+
+- Integrierte Gamepad-Bildschirmtastatur, insbesondere für Steam Deck, mit A/B/Y/Start-Bedienung.
+- Native Linux-x64-Exportvariante mit passenden EOS/GDExtension-Laufzeitbibliotheken (experimentell).
+- Überarbeitete Intro-Sequenz mit Video und animierten Panels.
+- Neun überarbeitete Charakterfrisuren; aktualisiertes ONK3L-Spielermodell.
+- Aktualisierte Dungeon-Karte mit zwölf validierten Räumen und neuen 2D-/3D-Dekorationen.
+
+### Geändert
+
+- Waffen-Upgrades, Schrottkosten und Fortschritts-/Level-Balancing überarbeitet.
+- Erster Sentinel/Wächter im Dungeon-Echtzeitkampf: Schusspause mit Faktor 2,75, Projektilschaden auf 40 Prozent des ursprünglichen Wertes, zeitversetzter erster Schuss.
+- Housing-Möbel (einschließlich Rüstungspuppen, Vitrinen und Waffenständern) ohne künstliches Kauf-/Besitzlimit; Goldkosten und Platzierungsregeln bleiben bestehen.
+- Koop-Protokoll und EOS-Bucket auf 43 aktualisiert.
+
+### Validierung und Hinweise
+
+- Godot-Import, Syntax- und Housing-Regressionstests bestanden. Windows-/Linux-Exports erfolgreich erstellt und auf Dateistruktur geprüft.
+- Exportierter Windows-Build separat vor Veröffentlichung gestartet; Linux-Ausführung auf einem Linux-Rechner und Linux-EOS-Online-Koop sind noch nicht verifiziert.
+- Alte Spielstände vor dem Test sichern. Es handelt sich weiterhin um eine Playtest-Version.
+
 ## [0.1.42] - 2026-11-23
 
 **Playtest 0.1.42 – Controller & Boss-Trophäen.** Dateiversion `0.1.42.0`, Koop-Protokoll 41, Windows x64, exportiert mit Godot 4.7.2.
