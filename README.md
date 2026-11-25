@@ -1,28 +1,28 @@
 # Sparkz in the Dust – Playtest
 
-**Sparkz in the Dust** ist ein Action-RPG für Windows. Die Welt liegt nach einem verheerenden Krieg in industriellen Ruinen und kontaminiertem Nebel. In kleinen Kommunen versuchen Überlebende, mit Bergung, Handwerk und improvisierter Technik weiterzumachen.
+**Sparkz in the Dust** ist ein Action-RPG für Windows und Linux (Linux-Build experimentell). Die Welt liegt nach einem verheerenden Krieg in industriellen Ruinen und kontaminiertem Nebel. In kleinen Kommunen versuchen Überlebende, mit Bergung, Handwerk und improvisierter Technik weiterzumachen.
 
-Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Windows-Pakete, nicht der vollständige Quellcode. Der aktuelle Stand ist eine **Testversion**.
+Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Windows- und Linux-Pakete, nicht der vollständige Quellcode. Der aktuelle Stand ist eine **Testversion**.
 
 ## Download
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.42** (Controller und Boss-Trophäen, 23.11.2026, Koop-Protokoll 41). Auf der Release-Seite unter *Assets* die `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht aller bekannten Playtest-Stände – auch solche, die bisher nur lokal vorliegen – steht in [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.43** (25.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 43). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
 
 ## Installation
 
 1. Die Zip herunterladen und **vollständig in einen eigenen Ordner entpacken** (nicht direkt aus der Zip starten).
-2. Im entpackten Ordner `Sparkz in the Dust.exe` starten.
-3. Die `.pck`-Datei, die DLLs und `eos.cfg` müssen bei der EXE bleiben.
+2. **Windows:** `Sparkz in the Dust.exe` starten. **Linux:** `chmod +x Sparkz_in_the_Dust.x86_64` und anschließend `./Sparkz_in_the_Dust.x86_64`.
+3. Programmdatei, gegebenenfalls `.pck`, `eos.cfg` und mitgelieferte DLL-/SO-Laufzeitbibliotheken zusammen belassen.
 4. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
 5. Falls Windows SmartScreen warnt: *Weitere Informationen* → *Trotzdem ausführen* (der Build ist nicht signiert).
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In Textfeldern öffnet **Steam+X** die Bildschirmtastatur. In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
+**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.43 ist eine integrierte Gamepad-Bildschirmtastatur verfügbar (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
 
-Der exportierte Playtest 0.1.42 ist ein **Windows-x64**-Build mit **Godot 4.7.2**.
+Der exportierte Playtest 0.1.43 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
 
 ## Koop
 
@@ -32,11 +32,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.42 ist nicht mit 0.1.41 oder älteren Builds kompatibel** (Protokoll 41 gegenüber Protokoll 40 und darunter).
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.43 ist nicht mit 0.1.42 oder älteren Builds kompatibel** (Protokoll 43 gegenüber 41 und darunter).
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.42)
+## Steuerung (Standard in 0.1.43)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -74,7 +74,7 @@ Im Dungeon wählt ihr beim Eintritt **Runden** (QTE-Kämpfe) oder **Echtzeit** (
 
 ## Was der aktuelle Playtest enthält
 
-Die folgende Liste gilt für Playtest **0.1.42**. Neu gegenüber 0.1.41 sind Set-Boni und Gruppen-Boni, Boss-Trophäen, Controller- und Steam-Deck-Unterstützung sowie mehrere Spiel- und Oberflächenkorrekturen. Koop nutzt Protokoll 41 und ist nicht mit 0.1.41 oder älteren Builds kompatibel. Alles Weitere ist kumulativ aus den Playtest-Notizen der vorangegangenen Pakete übernommen, soweit später keine Entfernung dokumentiert ist.
+Die folgende Liste gilt für Playtest **0.1.43**. Neu sind die integrierte Gamepad-Tastatur, eine experimentelle native Linux-Version, Game-Balancing, Intro-Loops, neun verbesserte Frisuren, die neue Dungeon-Karte mit Dekorationen, der abgestimmte Sentinel in der Eingangsschleuse sowie unbegrenzter Kauf und Besitz von Housing-Möbeln. Alles Weitere stammt aus den kumulierten Playtest-Notizen der Vorversionen.
 
 ### Welt und Gebiete
 
@@ -126,7 +126,7 @@ Die folgende Liste gilt für Playtest **0.1.42**. Neu gegenüber 0.1.41 sind Set
 
 - Online über Epic Online Services: im Koop-Menü Name und gegebenenfalls einen gespeicherten Charakter wählen, dann Online mit EOS → Erstellen. Der Host teilt einen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler: Code eingeben und beitreten. Der Host startet danach mit *Base betreten* und simuliert die Spielwelt.
 - EOS-P2P kann bei Bedarf ein Relay nutzen. `eos.cfg` liegt im Paket. LAN/IP bleibt zusätzlich verfügbar (Spielport UDP 28730).
-- Koop-Protokoll 41 (EOS-Bucket in der Paketprüfung: `CHOBUTAI-41-`). 0.1.42 ist nicht mit 0.1.41 oder älteren Builds kompatibel.
+- Koop-Protokoll 43 (EOS-Bucket: `CHOBUTAI-43-`). 0.1.43 ist nicht mit 0.1.42 oder älteren Builds kompatibel.
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg. Der Host steuert Reisen zwischen Bereichen. Expeditionen bleiben gemeinsame Gruppenreisen; Quartiere können unabhängig betreten und verlassen werden.
 - Charakter laden in der Lobby oder im Esc-Menü des Lagers übernimmt den gespeicherten Charakter samt Ausrüstung, Inventar, Level, Skills und persönlichem Geld. Die Gruppenwelt bleibt erhalten.
 
