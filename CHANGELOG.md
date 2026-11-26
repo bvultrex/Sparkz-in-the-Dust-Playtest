@@ -8,6 +8,24 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.48] - 2026-11-26
+
+**Rostöde und taktische Deckung.** Dateiversion `0.1.48.0`, Koop-Protokoll 50; Windows x64 und experimentelles Linux x64. Enthält alle Änderungen seit dem öffentlichen 0.1.45.
+
+- Begehbare Außenwelt mit sichtbaren Trampelpfaden, sechs Anlagenzugängen, Gegnern, persistenten Bergungspunkten und einem freischaltbaren Dienstweg.
+- 348 neue Dekoplatzierungen aus 42 Varianten; insgesamt 424 feste Platzierungen. Bewuchs an Wegrändern, thematisch passende industrielle Spuren und freie Anläufe.
+- Dezentes Bodenrelief mit geschützten Wegen/Gebäudeflächen; begehbare Rohrbrücke und Wartungshaus mit Außentreppe und Dachbeute.
+- Animierte Schotts, native Gebäude, Weltbeleuchtung und an der Welt verankerter schwarzer Rauch.
+- Verschiebbare Arena-Deckung: mit E greifen, ziehen und schieben; B für Hocke mit passenden Posen und Projektilschutz hinter niedriger Deckung.
+- Späher mit unterscheidbaren Sprint-/Spezialzuständen. Zwei gemeinsame Texturatlanten und bereinigte Laufzeitdoppelungen.
+- 17 Quell-Prüfgruppen bestanden, darunter vier lokale Koop-Prozesse mit Kampf, geteiltem Loot, gleichzeitig verschiedenen Brücken-/Dachhöhen und Gebietswechseln. Auch Arena-Deckung mit Host/Gast geprüft.
+- Die fertige Windows-EXE besteht Kamera-, Außenwelt- und 12-Raum-Prüfungen; zwei Releaseprozesse bestehen gemeinsame Dungeon-/Außenweltwechsel und Rückkehr ins Lager.
+- Linux exportiert und auf ELF/Bibliotheken geprüft; nativer Start und Internet/EOS auf zwei echten PCs bleiben ungetestet. Erhöhte Module haben eine Laufebene, keinen gleichzeitig begehbaren Unterpass/EG-Innenraum.
+- **Alle Mitspieler benötigen 0.1.48 / Protokoll 50.** Ältere Playtests sind inkompatibel.
+- Quell-Commit (lokales Spielprojekt): `7c11ea4bab3464563514b389379f7c26c6d6a758`
+- Windows: `Sparkz_in_the_Dust_Playtest_0.1.48_Windows.zip`, SHA256 `c44fc87877e163b232983ac2551e52b4b818fd4d0dcca86475acc1a91fac838d`
+- Linux: `Sparkz_in_the_Dust_Playtest_0.1.48_Linux.zip`, SHA256 `d73e53ba49d0e228f564d28b27ccd67ba9e0e0c901f87a8928416ba1fb08613d`
+
 ## [0.1.45] - 2026-11-26
 
 **Kamerakorrektur für Lager und Spielerquartier.** Dateiversion `0.1.45.0`, Koop-Protokoll 47; Windows x64 und experimentelles Linux x64.

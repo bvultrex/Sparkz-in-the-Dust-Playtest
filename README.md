@@ -8,18 +8,19 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.45** (26.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 47). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.48** (26.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 50). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
 
-## Neu in 0.1.45
+## Neu in 0.1.48
 
-- **Lager, Spielerquartier und Rust Vault** verwenden jetzt die gewählte schräge 3D-Kamera und vier Zoomstufen über **Z** (Standard 9).
-- Wände blenden aus, wenn sie die Spielfigur verdecken; Kollisionen bleiben bestehen.
-- Pumpenhalle und Filtermagazin neu angeordnet, mit verbundenen Pumpen, Regalreihen und Arbeitsbereichen.
-- Gemeinsame 3D-Darstellung für ausgerüstete Figuren, Gegner, Lichter und pixelige Schatten.
-- Drei animierte Sentinel-Gegner; der vierbeinige Belagerungs-Titan hat drei Bossphasen.
-- Verbesserte Controller-/Bildschirmtastatur-Bedienung und zuverlässigerer Koop-Start bei großen Kartendaten.
+- **Begehbare Rostöde:** das Lager verlassen und sichtbaren Trampelpfaden zu sechs Anlagen folgen. Gemeinsame 3D-Kamera, lokale Gegner, persistente Bergungspunkte und ein freischaltbarer Dienstweg.
+- **Dichtere Außenwelt:** 348 neue Dekorationen aus 42 Varianten, insgesamt 424 feste Objektplatzierungen. Bewuchs und Laub säumen Wege; Filter, Kabel, Schrott und Zäune liegen in passenden Anlagenbereichen.
+- Dezentes Bodenrelief, begehbare Rohrbrücke und Wartungshaus mit Außentreppe, Dachzugang und Dachbeute.
+- Dunkler Rauch bleibt an der Welt verankert und wandert nicht mit der Kamera.
+- **Taktische Arena-Deckung:** Blöcke mit E greifen und verschieben; mit B in die Hocke gehen, um passende Projektilbahnen hinter niedriger Deckung zu blockieren. Neue Greif-, Zug- und Schubposen.
+- Eigene Sprint- und Spezialbewegungen des Spähers, gemeinsame Texturatlanten und bereinigte doppelte Laufzeitgrafiken.
+- Alle bisherigen Kamera-, Dungeon-, Ausrüstungs- und Sentinel-Änderungen sind enthalten.
 
-Die Kameraumstellung gilt für Lager, Spielerquartier und Rust Vault. Arena und Oberwelt behalten vorerst ihre vorhandene Ansicht. Raster und Möbelauswahl im Einrichtungsmodus passen zur neuen Perspektive. Windows-Export und getrennte lokale Koop-Prozesse wurden geprüft; Tests mit zwei PCs über Internet/EOS sowie ein nativer Linux-Start stehen noch aus.
+Windows-EXE, getrennte lokale Vier-Spieler-Prozesse und Koop-Deckung wurden geprüft. Internet/EOS mit zwei echten PCs sowie ein nativer Linux-Start bleiben ungetestet. Brücke und Dach nutzen jeweils eine erhöhte Laufebene; darunter gibt es keinen gleichzeitig begehbaren zweiten Stock.
 
 ## Installation
 
@@ -31,9 +32,9 @@ Die Kameraumstellung gilt für Lager, Spielerquartier und Rust Vault. Arena und 
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.45 ist die integrierte Gamepad-Bildschirmtastatur weiter verbessert (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
+**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.48 ist die integrierte Gamepad-Bildschirmtastatur weiter verbessert (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
 
-Der exportierte Playtest 0.1.45 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
+Der exportierte Playtest 0.1.48 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
 
 ## Koop
 
@@ -43,11 +44,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.45 ist nicht mit 0.1.44 oder älteren Builds kompatibel** (Protokoll 47 gegenüber 46 und darunter).
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **Alle brauchen 0.1.48 / Protokoll 50.** 0.1.45 und ältere Builds sind inkompatibel.
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.45)
+## Steuerung (Standard in 0.1.48)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -56,10 +57,11 @@ Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tas
 | Aktion | Standard |
 | --- | --- |
 | Bewegen | WASD / Pfeiltasten |
-| Kamera in Lager, Quartier und Rust Vault zoomen | Z (12 / 10 / 9 / 8) |
+| Kamera in Lager, Quartier, Rust Vault und Außenwelt zoomen | Z (12 / 10 / 9 / 8) |
 | Sprint | Shift |
 | Ausweichen | Strg |
-| Interagieren | E |
+| Interagieren / Deckungsblock greifen oder loslassen | E |
+| Hocke umschalten | B |
 | Charakter / Inventar | C |
 | Emote-Rad | Q |
 | Pausemenü | Esc |
@@ -151,7 +153,7 @@ Die folgende Liste gilt für Playtest **0.1.43**. Neu sind die integrierte Gamep
 
 ### Steuerung, Speichern und Oberfläche
 
-- Tastenbelegung im Titelmenü unter Einstellungen und im Spiel über Charakter/Inventar (im Koop zusätzlich Esc). Eine Aktion hat bis zu drei Belegungen, Konflikte werden gemeldet, „Alles zurücksetzen“ stellt die Standardbelegung wieder her, Änderungen werden sofort pro Benutzer gespeichert, Hinweise im HUD folgen der Belegung. Esc bleibt als fester Rückweg. Die Standardbelegung steht im Abschnitt [Steuerung](#steuerung-standard-in-0142). Xbox-Controller und Steam Deck: Analogsticks, Menüfokus, Bunker-Editor mit dem Pad, Anzeige-Option (Letterbox oder Bildschirm füllen) und Steam+X für die Bildschirmtastatur.
+- Tastenbelegung im Titelmenü unter Einstellungen und im Spiel über Charakter/Inventar (im Koop zusätzlich Esc). Eine Aktion hat bis zu drei Belegungen, Konflikte werden gemeldet, „Alles zurücksetzen“ stellt die Standardbelegung wieder her, Änderungen werden sofort pro Benutzer gespeichert, Hinweise im HUD folgen der Belegung. Esc bleibt als fester Rückweg. Die Standardbelegung steht im Abschnitt [Steuerung](#steuerung-standard-in-0148). Xbox-Controller und Steam Deck: Analogsticks, Menüfokus, Bunker-Editor mit dem Pad, Anzeige-Option (Letterbox oder Bildschirm füllen) und Steam+X für die Bildschirmtastatur.
 - Sechs Speicherplätze. F5 öffnet die Speicherauswahl, F9 die Ladeauswahl im Solo-Spiel. Neue Spiele fragen vor Beginn nach dem Ziel-Slot, Automatiken speichern danach in den aktiven Slot. Belegte Slots werden zum Überschreiben erneut ausgewählt. Unter Windows wird beim Überschreiben die Umbenennung kurz erneut versucht, wenn die Datei gerade gesperrt ist. Alte Spielstände bleiben lesbar. Sie liegen unter `%APPDATA%\Godot\app_userdata\CHOBUTAI - Action RPG Prototype\`; das Paket enthält keine persönlichen Spielstände.
 - Korrigierte Links-/Rechts-Ausrichtung der Charaktere in den gemeinsamen 3D-Ansichten.
 - UI-Polish, in den Paketprüfungen von 0.1.38/0.1.39 als sechs überarbeitete Menüreiter geprüft. Eine feinere Aufschlüsselung, was das Polish umfasst, steht in den Playtest-Notizen nicht.
@@ -167,20 +169,18 @@ Die folgende Liste gilt für Playtest **0.1.43**. Neu sind die integrierte Gamep
 ### Audio und Technik
 
 - Soundeffekte von JDSherbert (Pixel Game Essentials SFX Pack); Atmosphärenklänge sind prozedural erstellt.
-- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.42.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
-- Das Paket bezeichnet sich ausdrücklich als Testversion. Offen ist laut `LIESMICH.txt` unter anderem der Beitritt eines zweiten Rechners über verschiedene Internetanschlüsse. Die Export-Prüfung der EXE bestätigte die Regionen Basis, Quartiere, Oberwelt, Dungeon und Arena, erreichte danach aber das Zeitlimit von 180 s vor den Checks zu Möbeln, Blickrichtung, Tag/Nacht und Tasten-Remap.
+- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.48.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
+- 17 Prüfgruppen bestanden, einschließlich vier getrennter lokaler Koop-Prozesse und der Arena-Deckung. Die fertige Windows-EXE besteht Kamera-, Außenwelt- und Dungeonprüfungen; Release-Host und -Gast bestehen gemeinsame Gebietswechsel. Internet/EOS auf zwei echten PCs und nativer Linux-Start bleiben ungetestet.
 
 ## Prüfsumme
 
-Zu der veröffentlichten Zip gibt es eine `.sha256`-Datei. So prüfst du, ob der Download vollständig ist:
+Auf der Release-Seite liegt `SHA256SUMS.txt` für beide ZIPs. Vergleiche die passende Zeile mit:
 
 ```powershell
-Get-FileHash .\Sparkz_in_the_Dust_Playtest_*.zip -Algorithm SHA256
+Get-FileHash .\Sparkz_in_the_Dust_Playtest_0.1.48_*.zip -Algorithm SHA256
 ```
 
-SHA256 der aktuellen Zip `Sparkz_in_the_Dust_Playtest_2026-11-23_Controller.zip`:
-
-`7beb2e1eb1fd6dd2774e71fc6e5a71a38f57786734e026aa810ac556817d602c`
+Jedes entpackte Paket enthält außerdem `FILES.sha256`, `BUILD.json` und `PRUEFUNG.json`.
 
 ## Feedback
 
