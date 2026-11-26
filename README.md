@@ -8,7 +8,18 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.43** (25.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 43). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.45** (26.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 47). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
+
+## Neu in 0.1.45
+
+- **Lager, Spielerquartier und Rust Vault** verwenden jetzt die gewählte schräge 3D-Kamera und vier Zoomstufen über **Z** (Standard 9).
+- Wände blenden aus, wenn sie die Spielfigur verdecken; Kollisionen bleiben bestehen.
+- Pumpenhalle und Filtermagazin neu angeordnet, mit verbundenen Pumpen, Regalreihen und Arbeitsbereichen.
+- Gemeinsame 3D-Darstellung für ausgerüstete Figuren, Gegner, Lichter und pixelige Schatten.
+- Drei animierte Sentinel-Gegner; der vierbeinige Belagerungs-Titan hat drei Bossphasen.
+- Verbesserte Controller-/Bildschirmtastatur-Bedienung und zuverlässigerer Koop-Start bei großen Kartendaten.
+
+Die Kameraumstellung gilt für Lager, Spielerquartier und Rust Vault. Arena und Oberwelt behalten vorerst ihre vorhandene Ansicht. Raster und Möbelauswahl im Einrichtungsmodus passen zur neuen Perspektive. Windows-Export und getrennte lokale Koop-Prozesse wurden geprüft; Tests mit zwei PCs über Internet/EOS sowie ein nativer Linux-Start stehen noch aus.
 
 ## Installation
 
@@ -20,9 +31,9 @@ Aktuell veröffentlicht: **Playtest 0.1.43** (25.11.2026, Windows x64 und experi
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.43 ist eine integrierte Gamepad-Bildschirmtastatur verfügbar (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
+**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.45 ist die integrierte Gamepad-Bildschirmtastatur weiter verbessert (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
 
-Der exportierte Playtest 0.1.43 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
+Der exportierte Playtest 0.1.45 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
 
 ## Koop
 
@@ -32,11 +43,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.43 ist nicht mit 0.1.42 oder älteren Builds kompatibel** (Protokoll 43 gegenüber 41 und darunter).
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **0.1.45 ist nicht mit 0.1.44 oder älteren Builds kompatibel** (Protokoll 47 gegenüber 46 und darunter).
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.43)
+## Steuerung (Standard in 0.1.45)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -45,6 +56,7 @@ Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tas
 | Aktion | Standard |
 | --- | --- |
 | Bewegen | WASD / Pfeiltasten |
+| Kamera in Lager, Quartier und Rust Vault zoomen | Z (12 / 10 / 9 / 8) |
 | Sprint | Shift |
 | Ausweichen | Strg |
 | Interagieren | E |

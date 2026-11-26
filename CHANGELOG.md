@@ -8,6 +8,51 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.45] - 2026-11-26
+
+**Kamerakorrektur für Lager und Spielerquartier.** Dateiversion `0.1.45.0`, Koop-Protokoll 47; Windows x64 und experimentelles Linux x64.
+
+- Die in 0.1.44 auf Rust Vault beschränkte Kamera ist jetzt auch im Lager und im begehbaren Spielerquartier aktiv: 35°/25°, Standardzoom 9, Z für 12/10/9/8.
+- Bewegung und Maus-Zielen werden passend zur Perspektive übersetzt; bestehende Möbel-, Interaktions- und Spielstandkoordinaten bleiben erhalten.
+- Verdeckende Gebäudeteile geben die Figur frei; Originalmaterialien, Kollisionen und Schatten bleiben erhalten.
+- Einrichtungsmodus mit passendem perspektivischem Raster, Möbelauswahl und Raumübersicht.
+- Projizierte Koop-Namensanzeigen; getrennte persönliche Quartiere behalten ihre Sichtbarkeit und Zugriffsbeschränkungen.
+- 17 Prüfgruppen bestanden. Die fertige Windows-EXE prüft die Kamerawinkel und Zoom 9 für beide Bereiche; lokale Release-Host-/Gastprozesse bestehen Dungeon-Raumwechsel und Rückkehr ins Lager.
+- Linux wurde exportiert und auf ELF-/Bibliotheksstruktur geprüft, jedoch nicht nativ gestartet. Internet/EOS mit zwei echten PCs bleibt ungetestet.
+- **Nicht kompatibel mit 0.1.44 oder älteren Builds.** Arena und Oberwelt behalten ihre bisherige Kamera.
+- Quell-Commit: `a577ea19d0ce509ceb890f7bc30ab85d205be1a8`
+- Windows: `Sparkz_in_the_Dust_Playtest_0.1.45_Windows.zip`, SHA256 `f1a407e1075e91eb092a8761e1279e526fee6a5bd8ce7c4edde1554c87294e77`
+- Linux: `Sparkz_in_the_Dust_Playtest_0.1.45_Linux.zip`, SHA256 `160afe62a7bfcc8f9901483102a570f08b8eebcafa9d76cfc76f7930b22f5865`
+
+## [0.1.44] - 2026-11-26 (lokales Playtestpaket)
+
+**Playtest 0.1.44 – Rust Vault in 3D und Sentinels.** Dateiversion `0.1.44.0`, Koop-Protokoll 46, Windows x64 und experimentelles Linux x64, exportiert mit Godot 4.7.2.
+
+- Windows-Paket: `Sparkz_in_the_Dust_Playtest_0.1.44_Windows.zip`
+- SHA256 Windows: `35de712881ca13d748f14a612f33688d680699b8ab9b766492c604370ce1d232`
+- Linux-Paket: `Sparkz_in_the_Dust_Playtest_0.1.44_Linux.zip`
+- SHA256 Linux: `8ba5f00d7e6d0c88bb1b5a56c48649726e806e5589c31688a7361d79f72b3deb`
+- Quell-Commit (lokales Projekt): `431e4e5505df8d2c41056ce9d9dbe1af1f52a442`
+- **Nicht kompatibel mit 0.1.43 oder älteren Builds** (Koop-Protokoll 46).
+
+### Hinzugefügt und geändert
+
+- Native 3D-Kamera in allen zwölf Rust-Vault-Räumen; vier Zoomstufen über die umbelegbare Taste Z, Standardgröße 9.
+- Sichtprüfung für verdeckende Wände, mit Ausblendung, Wiederherstellung und unveränderten Kollisionen.
+- Pumpenhalle und Filtermagazin mit gezielt angeordneten Arbeitsbereichen, verbundenen Pumpen und Regalreihen.
+- Gemeinsame 3D-Darstellung für ausgerüstete Figuren, native Gegner, Lichter und pixelige Schatten; Taschenlampe auf Brusthöhe.
+- Animierte Sentinel-Modelle: vierbeiniger Walker, kleine fliegende Drohne und großer vierbeiniger Titan mit drei Bossphasen.
+- Zuverlässigerer Koop-Start durch Empfangsbestätigung großer Kartendaten; gemeinsame Prüfung von Wegsperren und Raumwechseln.
+- Verbesserte Controller-Eingabe, Bildschirmtastatur, Remapping und Block-/Angriffstasten.
+
+### Validierung und Hinweise
+
+- Zwölf Prüfgruppen bestanden; die fertige Windows-Release-EXE prüft alle zwölf Räume und nativen Gegnermodelle mit einem integrierten Selbsttest.
+- Getrennte lokale Release-Host-/Gastprozesse bestehen die Raumwechsel; die fertige EXE erreicht außerdem den animierten Titelbildschirm. 3D-Deko wird auch ohne Debug-Assertions korrekt aufgebaut.
+- Linux-Export und Bibliotheksstruktur geprüft; nativer Linux-Start und Linux-EOS-Online sind ungetestet. Internet/EOS mit zwei echten PCs bleibt Teil des Playtests.
+- Die Kameraumstellung gilt hier für Rust Vault. Andere Bereiche und weitere Raumlayouts werden später überarbeitet.
+- Eigene gespeicherte Dungeon-Editor-Karten behalten Vorrang. Bisheriger Spielstandordner bleibt bestehen.
+
 ## [0.1.43] - 2026-11-25
 
 **Playtest 0.1.43 - Dungeon und Linux-Experiment.** Dateiversion `0.1.43.0`, Koop-Protokoll 43, Windows x64 und experimentelles Linux x64, exportiert mit Godot 4.7.2.
@@ -347,5 +392,5 @@ Diese Punkte sind absichtlich offen gelassen, weil dafür keine belastbare Versi
 - **Koop-Protokoll 23:** Zwischen Editor-Lighting (Protokoll 22) und Combat-Environment (Protokoll 24) gibt es in `releases/` kein Paket.
 - **Koop-Protokolle 29–33:** Zwischen Tag-Nacht (Protokoll 28) und Quartiere-Mobiliar-LootPvP (Protokoll 34) gibt es in `releases/` keine Pakete. NPC-Tagesabläufe, Bergungsereignisse und Sektormodifikatoren tauchen in der Quartiere-`LIESMICH.txt` bereits als „bisher enthalten“ auf; das Einführungsdatum ist unbekannt.
 - **UI-Polish** wird ab 0.1.38 als bereits enthalten genannt; ein eigenes Paket dazu wurde nicht gefunden.
-- Im **GitHub-Repository** `bvultrex/Sparkz-in-the-Dust-Playtest` ist bisher nur **0.1.40** als Release und Tag veröffentlicht. Die älteren Stände stammen aus dem lokalen Projektordner.
-- Im lokalen Arbeitsbaum gibt es **uncommittete** Änderungen (unter anderem Koop-Protokoll 39). Sie sind hier nicht als Version oder Feature aufgeführt.
+- Die GitHub-Releases beginnen mit **0.1.40**. Frühere Stände in dieser Übersicht stammen aus lokalen Playtest-Paketen.
+- Zwischenstände ohne eigenes Playtest-Paket werden nicht als veröffentlichte Versionen aufgeführt.
