@@ -8,19 +8,19 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.48** (26.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 50). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.49** (27.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 51). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
 
-## Neu in 0.1.48
+## Neu in 0.1.49
 
-- **Begehbare Rostöde:** das Lager verlassen und sichtbaren Trampelpfaden zu sechs Anlagen folgen. Gemeinsame 3D-Kamera, lokale Gegner, persistente Bergungspunkte und ein freischaltbarer Dienstweg.
-- **Dichtere Außenwelt:** 348 neue Dekorationen aus 42 Varianten, insgesamt 424 feste Objektplatzierungen. Bewuchs und Laub säumen Wege; Filter, Kabel, Schrott und Zäune liegen in passenden Anlagenbereichen.
-- Dezentes Bodenrelief, begehbare Rohrbrücke und Wartungshaus mit Außentreppe, Dachzugang und Dachbeute.
-- Dunkler Rauch bleibt an der Welt verankert und wandert nicht mit der Kamera.
-- **Taktische Arena-Deckung:** Blöcke mit E greifen und verschieben; mit B in die Hocke gehen, um passende Projektilbahnen hinter niedriger Deckung zu blockieren. Neue Greif-, Zug- und Schubposen.
-- Eigene Sprint- und Spezialbewegungen des Spähers, gemeinsame Texturatlanten und bereinigte doppelte Laufzeitgrafiken.
-- Alle bisherigen Kamera-, Dungeon-, Ausrüstungs- und Sentinel-Änderungen sind enthalten.
+- **Freie Spezialisierungen:** alle acht bisherigen Skillbaum-Seiten sind für den Hauptcharakter erlernbar. 34 Freischaltungen plus vier Basisfähigkeiten, gemeinsame FP und vier frei kombinierbare Kampffähigkeiten; Fortschritt wird gespeichert.
+- **Rundenkampf:** alle Skillangriffe kosten EN. Verteidigen regeneriert bis zu 15 EN. Flucht hängt von AGI ab, scheitert gegen Bosse und verbraucht bei Fehlschlag einen Zug – im Solo und Koop.
+- **Persönliches Quartier:** jede Vitrine, jeder Waffenständer und jede Rüstungspuppe verwaltet eigene Gegenstände. Alte Zuweisungen werden übernommen. Möbelpreise sind ungefähr 25 % günstiger.
+- Weniger Sprintverbrauch: 16 statt 24 AP/s. Questlog und Queststatus verbessert; ausgezahlte Aufträge bleiben abgeschlossen.
+- Neues Spiel startet um 09:00, der Nacht-Notruf wartet auf den abgeschlossenen Einführungsauftrag.
+- Mehr Beute hinter Codeschotts, korrekte Bosstrophäen-Infos und stabilere Verdeckungsprüfung beim Umbauen.
+- Die begehbare Rostöde, alle 42 Dekovarianten mit 348 Instanzen, Brücke, Dachzugang und alle bisherigen Änderungen sind enthalten.
 
-Windows-EXE, getrennte lokale Vier-Spieler-Prozesse und Koop-Deckung wurden geprüft. Internet/EOS mit zwei echten PCs sowie ein nativer Linux-Start bleiben ungetestet. Brücke und Dach nutzen jeweils eine erhöhte Laufebene; darunter gibt es keinen gleichzeitig begehbaren zweiten Stock.
+Die neuen Fähigkeiten werden im **Rundenkampf** verwendet; eine aktive Echtzeit-Skill-Hotbar bleibt offen. Linux ist experimentell. Internet/EOS auf zwei echten PCs und nativer Linux-Start sind ungetestet. Prüfdetails stehen in der mitgelieferten `PRUEFUNG.json` und `LIESMICH.txt`.
 
 ## Installation
 
@@ -32,9 +32,9 @@ Windows-EXE, getrennte lokale Vier-Spieler-Prozesse und Koop-Deckung wurden gepr
 
 Alle Details zur jeweiligen Version, zur Steuerung und zu bekannten Grenzen stehen in der `LIESMICH.txt` im Paket.
 
-**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.48 ist die integrierte Gamepad-Bildschirmtastatur weiter verbessert (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
+**Steam Deck:** In Steam unter *Nicht-Steam-Spiel hinzufügen* die Windows-`Sparkz in the Dust.exe` einbinden und den Windows-Build mit Proton starten. In 0.1.49 ist die integrierte Gamepad-Bildschirmtastatur weiter verbessert (A Eingabe, B Löschen, Y Groß-/Kleinschreibung, Start Bestätigen). In den Einstellungen gibt es die Anzeige-Optionen *Pixelgenau (Letterbox)* (480×270 in ganzen Stufen) und *Bildschirm füllen*; auf 1280×800 (16:10) wird *Bildschirm füllen* automatisch vorgeschlagen.
 
-Der exportierte Playtest 0.1.48 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
+Der exportierte Playtest 0.1.49 enthält **Windows x64 und Linux x64**, exportiert mit **Godot 4.7.2**. Linux ist experimentell; nativer Spielstart und EOS-Online-Koop unter Linux sind noch nicht verifiziert.
 
 ## Koop
 
@@ -44,11 +44,11 @@ Es gibt Koop für 2–4 Spieler.
 - **Online mit EOS:** Der Host erstellt eine Sitzung und teilt seinen achtstelligen Einladungscode (erneutes Anklicken kopiert den Code). Mitspieler geben den Code ein und treten bei. Der Host startet danach mit *Base betreten*.
 - **LAN/IP** bleibt zusätzlich verfügbar (Spielport UDP 28730).
 - Wenn der Host die Sitzung beendet, endet sie für alle. Es gibt keinen Hostwechsel und keinen späteren Einstieg.
-- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **Alle brauchen 0.1.48 / Protokoll 50.** 0.1.45 und ältere Builds sind inkompatibel.
+- Alle Mitspieler brauchen eine Version mit **demselben Koop-Protokoll**. **Alle brauchen 0.1.49 / Protokoll 51.** 0.1.48 und ältere Builds sind inkompatibel.
 
 Welche Versionen zusammenpassen, steht in den Release-Notes und im [CHANGELOG](CHANGELOG.md).
 
-## Steuerung (Standard in 0.1.48)
+## Steuerung (Standard in 0.1.49)
 
 Die Tasten sind in den Einstellungen änderbar (Titelmenü > Einstellungen > Tastenbelegung; im Spiel auch über Charakter/Inventar).
 
@@ -169,15 +169,15 @@ Die folgende Liste gilt für Playtest **0.1.43**. Neu sind die integrierte Gamep
 ### Audio und Technik
 
 - Soundeffekte von JDSherbert (Pixel Game Essentials SFX Pack); Atmosphärenklänge sind prozedural erstellt.
-- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.48.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
-- 17 Prüfgruppen bestanden, einschließlich vier getrennter lokaler Koop-Prozesse und der Arena-Deckung. Die fertige Windows-EXE besteht Kamera-, Außenwelt- und Dungeonprüfungen; Release-Host und -Gast bestehen gemeinsame Gebietswechsel. Internet/EOS auf zwei echten PCs und nativer Linux-Start bleiben ungetestet.
+- Windows-x64-Playtest, exportiert mit Godot 4.7.2. Eigenes App-Icon, Dateiversion 0.1.49.0. Godot, Steam und der Epic Games Launcher müssen nicht separat installiert werden.
+- Die gezielten Feedbackprüfungen umfassen Skill-Freischaltungen und Speicherung, EN und Flucht, die Auftragskette, unabhängige Ausstellungen und Koop-Quartiere. Die exportierte Windows-EXE besteht die Kamera-, Außenwelt- und Dungeonprüfung; getrennte Release-Host-/Gastprozesse bestehen gemeinsame Gebietswechsel. Internet/EOS auf zwei echten PCs und nativer Linux-Start bleiben ungetestet.
 
 ## Prüfsumme
 
 Auf der Release-Seite liegt `SHA256SUMS.txt` für beide ZIPs. Vergleiche die passende Zeile mit:
 
 ```powershell
-Get-FileHash .\Sparkz_in_the_Dust_Playtest_0.1.48_*.zip -Algorithm SHA256
+Get-FileHash .\Sparkz_in_the_Dust_Playtest_0.1.49_*.zip -Algorithm SHA256
 ```
 
 Jedes entpackte Paket enthält außerdem `FILES.sha256`, `BUILD.json` und `PRUEFUNG.json`.

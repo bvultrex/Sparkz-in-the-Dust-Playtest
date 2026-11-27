@@ -8,6 +8,25 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.49] - 2026-11-27
+
+**Freie Spezialisierungen und Spielerfeedback.** Dateiversion `0.1.49.0`, Koop-Protokoll 51; Windows x64 und experimentelles Linux x64.
+
+- Alle acht Skillbaum-Seiten sind für den Hauptcharakter erlernbar: 34 Freischaltungen plus vier Basisfähigkeiten, gemeinsame FP, Voraussetzungen und vier frei kombinierbare Kampffähigkeiten mit gespeichertem Fortschritt.
+- Rundenkampf in Solo und Koop: alle Skillangriffe kosten EN, Verteidigen regeneriert bis zu 15 EN. AGI-basierte Flucht mit 25–80 % Chance; Fehlschlag kostet einen Zug, Bossflucht ist gesperrt.
+- Ausstellungsgegenstände an Möbel-UIDs gebunden: mehrere Vitrinen, Waffenständer und Rüstungspuppen unabhängig. Bestehende Zuweisungen werden migriert; entfernte Ausstellungen geben ihre Gegenstände frei.
+- Möbel ungefähr 25 % günstiger; Sprint verbraucht 16 statt 24 AP/s.
+- Questlog ergänzt; ausgezahlte Quests bleiben abgeschlossen. Angenommene Story-Aufträge verlangen neue Zielbesuche und sind vor Annahme nicht an den Aufgabenstationen abschließbar.
+- Neues Spiel startet um 09:00; Nacht-Notruf erst nach dem Einführungsauftrag. Mehr Beute in Filtermagazin/Kernkammer und zutreffende Bosstrophäen-Infos.
+- Lebenszyklusfehler der Verdeckungsprüfung beim Entfernen von Möbeln behoben.
+- Alle bisherigen Außenwelt- und Inhaltsänderungen aus 0.1.48 enthalten.
+- Gezielte Quellprüfungen: 334 kompilierbare Skripte, alle Freischaltungen/Save-Load, Runden-Aktionsauflösung, Story-/Questbelege, 39 Dungeonziele und getrennte native Koop-Quartierprozesse. Die tatsächlich exportierte Windows-EXE besteht Kamera-/Außenwelt-/12-Raum-Prüfungen; Release-Host/Gast bestehen Gebietswechsel und Lagerrückkehr.
+- Aktive Echtzeit-Skill-Hotbar bleibt offen. Linux-ELF und Bibliotheken geprüft; nativer Linux-Start und Internet/EOS auf zwei echten PCs sind ungetestet.
+- **Alle Mitspieler benötigen 0.1.49 / Protokoll 51.** 0.1.48 und ältere Builds sind inkompatibel.
+- Quell-Commit (lokales Spielprojekt): `203df72297c1414382d33a8901d85636d6228f5f`
+- Windows: `Sparkz_in_the_Dust_Playtest_0.1.49_Windows.zip`, SHA256 `8dbc9912426e9ce2e7537659f66113d76adae94a5381f9e218df752aba443cb0`
+- Linux: `Sparkz_in_the_Dust_Playtest_0.1.49_Linux.zip`, SHA256 `0e7215cba15995eae83d97c66d960b7b4c40de81ae282120344024e09d23e1c0`
+
 ## [0.1.48] - 2026-11-26
 
 **Rostöde und taktische Deckung.** Dateiversion `0.1.48.0`, Koop-Protokoll 50; Windows x64 und experimentelles Linux x64. Enthält alle Änderungen seit dem öffentlichen 0.1.45.
