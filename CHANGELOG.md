@@ -8,6 +8,20 @@ Numerische Dateiversionen (`0.1.x`) gibt es erst ab dem Paket **Lebendige Ausrü
 
 Quellen sind die lokalen Playtest-Pakete unter `releases/` (jeweils `LIESMICH.txt`, `BUILD.json`, gelegentlich `AENDERUNGEN.txt`), die zugehörigen Zip-Prüfsummen, das lokale Projekt-Git und – für 0.1.40 – das GitHub-Release `v0.1.40`. Daten ohne Uhrzeit stammen aus dem in der Quelle genannten Kalendertag. Uhrzeiten sind in **Europe/Warsaw**, sofern eine Zeitangabe vorliegt.
 
+## [0.1.50] – 2026-11-27
+
+### Verbessert
+- Aufklappbarer Questlog mit Statussymbolen und getrennten Notizen.
+- Spielstand-Löschung mit Bestätigung und Schutz des aktuell geladenen Slots.
+- Abschaltbare Maus-Zielhilfe für Klicks auf projizierte Gegnerkörper.
+- Gespeicherte Abtrünnigen-Begegnungen in der Echtzeit-Oberwelt; humanoide Darstellung mit Ausrüstung.
+- Koop-Protokoll 52; keine gemischten Sitzungen mit älteren Builds.
+
+### Prüfgrenzen
+- Linux-Build experimentell, nativer Linux-Start ungetestet.
+- Echter Zwei-PC-Internet-/EOS-Test steht aus.
+- Zielhilfe ergänzt die vorhandene Nahkampfprüfung; keine Garantie für jeden gemeldeten Fehltreffer.
+
 ## [0.1.49] - 2026-11-27
 
 **Freie Spezialisierungen und Spielerfeedback.** Dateiversion `0.1.49.0`, Koop-Protokoll 51; Windows x64 und experimentelles Linux x64.

@@ -8,19 +8,17 @@ Dies ist das öffentliche Playtest-Repository. Hier liegen die spielbaren Window
 
 **[Neueste Playtest-Version herunterladen](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases/latest)**
 
-Aktuell veröffentlicht: **Playtest 0.1.49** (27.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 51). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
+Aktuell veröffentlicht: **Playtest 0.1.50** (27.11.2026, Windows x64 und experimentelles Linux x64, Koop-Protokoll 52). Auf der Release-Seite unter *Assets* die passende `.zip` wählen. Ältere Pakete stehen unter [Releases](https://github.com/bvultrex/Sparkz-in-the-Dust-Playtest/releases). Eine Übersicht steht im [CHANGELOG.md](CHANGELOG.md).
 
-## Neu in 0.1.49
+## Neu in 0.1.50
 
-- **Freie Spezialisierungen:** alle acht bisherigen Skillbaum-Seiten sind für den Hauptcharakter erlernbar. 34 Freischaltungen plus vier Basisfähigkeiten, gemeinsame FP und vier frei kombinierbare Kampffähigkeiten; Fortschritt wird gespeichert.
-- **Rundenkampf:** alle Skillangriffe kosten EN. Verteidigen regeneriert bis zu 15 EN. Flucht hängt von AGI ab, scheitert gegen Bosse und verbraucht bei Fehlschlag einen Zug – im Solo und Koop.
-- **Persönliches Quartier:** jede Vitrine, jeder Waffenständer und jede Rüstungspuppe verwaltet eigene Gegenstände. Alte Zuweisungen werden übernommen. Möbelpreise sind ungefähr 25 % günstiger.
-- Weniger Sprintverbrauch: 16 statt 24 AP/s. Questlog und Queststatus verbessert; ausgezahlte Aufträge bleiben abgeschlossen.
-- Neues Spiel startet um 09:00, der Nacht-Notruf wartet auf den abgeschlossenen Einführungsauftrag.
-- Mehr Beute hinter Codeschotts, korrekte Bosstrophäen-Infos und stabilere Verdeckungsprüfung beim Umbauen.
-- Die begehbare Rostöde, alle 42 Dekovarianten mit 348 Instanzen, Brücke, Dachzugang und alle bisherigen Änderungen sind enthalten.
+- **Questlog:** Statussymbole für laufende, abgabebereite und abgeschlossene Aufträge; Details einzeln aufklappen.
+- **Spielstände löschen:** im Laden-Dialog mit Bestätigung. Der aktuell geladene Slot ist geschützt.
+- **Klick-Zielhilfe:** unter Einstellungen > Tastenbelegung abschaltbar. Klicks auf den sichtbaren Gegnerkörper richten den Angriff auf dessen Standort aus; Reichweite, Deckung und Ausweichen gelten weiterhin.
+- **Abtrünnige:** drei gespeicherte Zufallsbegegnungsstellen mit bewaffneten humanoiden Gegnern in der Echtzeit-Oberwelt. Kein erneutes Würfeln bei jedem Gebietswechsel, keine doppelte Beute für besiegte Mitglieder.
+- Alle Änderungen aus 0.1.49 bleiben enthalten.
 
-Die neuen Fähigkeiten werden im **Rundenkampf** verwendet; eine aktive Echtzeit-Skill-Hotbar bleibt offen. Linux ist experimentell. Internet/EOS auf zwei echten PCs und nativer Linux-Start sind ungetestet. Prüfdetails stehen in der mitgelieferten `PRUEFUNG.json` und `LIESMICH.txt`.
+Für Koop müssen alle Teilnehmenden **0.1.50 / Protokoll 52** verwenden. Ältere Versionen sind inkompatibel. Linux ist experimentell; nativer Linux-Start und Internet/EOS auf zwei echten PCs sind ungetestet. Prüfdetails stehen in `PRUEFUNG.json` und `LIESMICH.txt`. Die aktive Echtzeit-Skill-Hotbar bleibt offen.
 
 ## Installation
 
